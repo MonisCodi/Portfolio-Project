@@ -1,5 +1,5 @@
 import React from 'react';
-import dataImage from '../data.json';
+import skillData from "../SkillsData.json"
 
 export default function Portfolio() {
   return (
@@ -11,10 +11,10 @@ export default function Portfolio() {
               <h2 className="text-white">Portfolio</h2>
               <br />
               <div className="row row-cols-1 row-cols-md-3 g-4 position">
-                {dataImage.map((element, key) => (
+                {skillData.map((element, key) => (
                   <div key={key} className="col">
                     <div className="card position-relative overflow-hidden image-hover-wrapper">
-                      <img src={element.img} className="card-img-top" alt="img" />
+                    <img style={{width:259, height:230}} src={element.img} class="card-img-top" alt="img" />
                       <div className="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white text-center">
                         <div>
                           <h5>{element.title || "Hovered Title"}</h5>
