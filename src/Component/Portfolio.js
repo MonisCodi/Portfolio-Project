@@ -4,7 +4,7 @@ import skillData from "../SkillsData.json"
 export default function Portfolio() {
   return (
     <React.Fragment>
-      <div className="portfolio">
+      <div id="portfolio">
         <div className="container">
           <div className="row">
             <div className="heading">

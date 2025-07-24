@@ -3,13 +3,13 @@ import React from 'react'
 export default function Home() {
     return (
         <React.Fragment>
-            <div className='bg-img'>
+            <div id='main_home'>
                 <div className='container'>
                     <div className='row '>
-                        <div className='col col-md-6 heading-center  '>
+                        <div className='col'>
                             <div className='heading '>
-                                <h4>I'M <strong style={{ fontSize: 40 }} className='text-white '>Mohd Monis</strong><br />
-                                    Web Developer </h4>
+                                <h1>I'M <strong className='text-warning'>Mohd Monis</strong><br />
+                                    Web Developer </h1>
                                 <br />
                                 <div className='home-btn'>
                                     <button className='btn btn-primary btn-lg'>Contact Me</button>
@@ -18,10 +18,6 @@ export default function Home() {
                             <br />
                         </div>
                         <br />
-                        <div className='col col-md-6'>
-                            <div className='img'>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

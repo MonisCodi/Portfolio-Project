@@ -1,23 +1,21 @@
+import "../src/Style/Sass/main.css"
 
-import './App.css';
 import About from './Component/About';
 import Contact from './Component/Contact';
-import Navbar from './Component/Header/Header';
 import Home from './Component/Home';
 import Portfolio from './Component/Portfolio';
+import React from 'react';
+import Navbar from "./Component/Navbar/Header"
 
 function App() {
   return (
-    <div className="App bg-dark">
-      <header>
-        <Navbar />
-        <Home/>
-        <About />
-        <Portfolio />
-        <Contact />
-      </header>
-
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <Home />
+      <About />
+      <Portfolio />
+      <Contact />
+    </React.Fragment>
   );
 }
 

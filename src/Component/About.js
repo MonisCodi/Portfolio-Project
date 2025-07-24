@@ -4,7 +4,7 @@ import Skills from './Skills'
 export default function About() {
     return (
         <React.Fragment>
-            <div className='about-page'>
+            <div id='about'>
                 <div className='container '>
                     <div className='heading'>
                         <h2 style={{ float: 'left' }} className='text-white'>About</h2>

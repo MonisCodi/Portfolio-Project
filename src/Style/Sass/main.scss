@@ -1,3 +1,104 @@
+// Sass Variable Start ----->
+
+$theme-colors: (
+  "warning":    $warning,
+  "light":      $light,
+  "dark":       $dark
+);
+
+@function theme-color($name) {
+  @return map-get($theme-colors, $name);
+}
+
+// Sass Variable End ---->
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+// h1{
+//     color: red;
+//     font-size: 5rem + 5rem;
+// }
+
+p{
+  font-size: 5rem;
+}
+
+
+#main_home{
+  background-image: url(https://media.istockphoto.com/id/134081020/photo/portrait-of-young-businessman.jpg?s=612x612&w=0&k=20&c=42Rnp4Q0iMFoAjDmQaBkbzHbb5coG8EDdKbvdNcuwB4=);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+background-color: red;
+
+
+}
+
+  h1{
+    font-size: 0.1rem;
+     color: theme-color("light");
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+#main_footer{
+  padding: 10px;
+}
+
+
+
+
+#main_contact{
+      background-color: #a5a5a51f;
+      padding: 50px 0px 50px 0px;
+}
+#main_contact .heading{
+  margin-top: -75px;
+  margin-bottom: 24px;
+  
+}
+#main_contact button.btn.btn-lg.text-white {
+    color: #ffca2c !important;
+}
+#main_contact button{
+  margin: 8px;
+}
+#main_contact path {
+  color: white;
+}
+
+
+
+#main_home{
+  background-color: #ffca2c;
+}
+
+
+
+
+
+//////////////////////////////////////////
+/// 
+/// 
+
+
 .App {
   text-align: center;
 }
@@ -50,18 +151,10 @@
   height: 100vh;
 }
 
-.bg-img{
-  background-image: url(https://media.istockphoto.com/id/134081020/photo/portrait-of-young-businessman.jpg?s=612x612&w=0&k=20&c=42Rnp4Q0iMFoAjDmQaBkbzHbb5coG8EDdKbvdNcuwB4=);
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-
-
-}
 
 /* // About CSS  */
 
-.about-page {
+#about {
 margin-top: 100px 0px 0px 0px;
 padding: 100px 0px 100px 0px;
 }
@@ -69,7 +162,7 @@ padding: 100px 0px 100px 0px;
 .row .p-text{
 padding-left: 68px;
 }
-.skills {
+#skill{
 margin: 50px 0px 0px 0px;
 }
 
@@ -120,9 +213,7 @@ margin: 50px 0px 0px 0px;
 {
   padding-left: 138px;
 }
-.heading h4{
-  padding-left: 39px;
-}
+
 .paragraph-text{
       padding-left: 34px ;
 
@@ -145,26 +236,28 @@ text-align: left;
 }
 
 
-.contact{
+#contact{
       background-color: #a5a5a51f;
       padding: 50px 0px 50px 0px;
 }
-.contact .heading{
+#contact .heading{
   margin-top: -75px;
   margin-bottom: 24px;
   
 }
-.contact button.btn.btn-lg.text-white {
+#contact button.btn.btn-lg.text-white {
     color: #ffca2c !important;
 }
-.contact button{
+#contact button{
   margin: 8px;
 }
-.contact path {
+#contact path {
   color: white;
 }
 
 
-.footer{
-  padding: 10px;
-}
+
+
+
+
+

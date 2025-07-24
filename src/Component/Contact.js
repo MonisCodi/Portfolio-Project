@@ -9,12 +9,9 @@ export default function Contact() {
     return (
         <React.Fragment>
             <Testmonial />
-            <div className='contact'>
+            <div id='main_contact'>
                 <h2 className='heading text-white'>Contact Me</h2>
                 <div className='container'>
-               
-                        
-                  
                     <div className='row'>
                         <div className='g-btn'>
                         <button className='btn btn-lg text-white bg-dark'><IoMdMail /> mmoniscodi.com
@@ -28,9 +25,9 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <div className='footer'>
-                <p className='text-white'>&copy @2025</p>
-</div>
+                <div id='main_footer'>
+                    <p className='text-white'>&copy @2025</p>
+    </div>
                 
            
         </React.Fragment>

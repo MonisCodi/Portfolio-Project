@@ -3,7 +3,7 @@ import skillData from "../SkillsData.json"
 export default function data() {
     return (
         <React.Fragment>
-            <div className='skills'>
+            <div id='skill'>
                 <div className='container'>
                     <div className='row'>
                           <div className='heading'>
