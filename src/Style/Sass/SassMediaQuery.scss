@@ -1,0 +1,80 @@
+$smallScreen: 300px;
+$mediumScreen: 768px;
+$largeScreen: 1200px;
+
+@media (min-width: $smallScreen) and (max-width: $mediumScreen) {
+  
+#main_about,#main_portfolio,#main_skill,#main_testimonial,#main_contact{
+    padding: 70px 0 60px 0 !important;
+}
+h1{
+        padding-bottom: 29px !important;
+        text-align: center;
+}
+}
+
+// HOME PAGE MEDIA QUERY Style SASS START  ----->
+@media (min-width: $smallScreen) and (max-width: $mediumScreen) {
+  #main_home {
+    height:  270px !important;
+  }
+  h1{
+    margin: 0px 0px -9px 0px !important;
+    font-size: 1.3rem !important;
+}
+    .font_size {
+        font-size: 1.4rem !important;
+    }
+  button.home-btn.btn.btn-lg {
+    font-size: 0.5rem;
+  }
+
+  #main_home button{
+    margin-top: -49px;
+
+  }
+#main_home .heading {
+margin-left: -28px;
+}
+}
+
+@media (min-width: $mediumScreen ) and (max-width: $largeScreen) {
+  #main_home {
+    height: 433px !important;
+  }
+}
+
+// HOME PAGE MEDIA QUERY Style SASS END  ----->
+// HOME About MEDIA QUERY Style SASS START  ----->
+@media (min-width: $smallScreen) and (max-width: $mediumScreen) {
+  
+#main_about {
+    padding: 70px 0 60px 0 !important;
+}
+
+  #main_about h1{
+        padding-bottom: 29px !important;
+        text-align: center;
+
+  }
+     #main_about p {
+           padding: 0 0 0px 0px !important;
+        text-align: center;  /* example override */
+  }
+}
+
+// ABOUT MEDIA QUERY Style SASS END  ----->
+// SKILLS MEDIA QUERY Style SASS START  ----->
+
+@media (min-width: $smallScreen) and (max-width: $mediumScreen) {
+
+  #main_skill{
+ padding: 0px 0 60px 0 !important;
+  }
+}
+@media (min-width: 412px) and (max-width: 915px) {
+
+#main_testimonial .row{
+  display: block;
+}
+}

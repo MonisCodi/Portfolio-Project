@@ -13,20 +13,20 @@ export default function Navbar() {
                             <div >
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className="nav-link active text-white" aria-current="page" href="#about">About</a>
+                                        <a className="nav-link active text-white" aria-current="page" href="#main_about">About</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#portfolio">Portfolio</a>
+                                        <a className="nav-link text-white" href="#main_portfolio">Portfolio</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white" href="#contact">Contact</a>
+                                        <a className="nav-link text-white" href="#main_contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div className='sarch-bar'>
-                            <form class="form-inline d-flex">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                            <form className="form-inline d-flex">
+                                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
 
                             </form>
                         </div>

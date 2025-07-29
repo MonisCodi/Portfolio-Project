@@ -1,263 +1,274 @@
+@import "./SassMediaQuery";
+
 // Sass Variable Start ----->
 
-$theme-colors: (
-  "warning":    $warning,
-  "light":      $light,
-  "dark":       $dark
-);
-
-@function theme-color($name) {
-  @return map-get($theme-colors, $name);
-}
+$font-size: 16px;
+$color2: #ffca2c;
+$color3: rgb(0 0 0 / 86%);
 
 // Sass Variable End ---->
+// Media Query Sass Start
 
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+// Media Query Sass End
+
+#root {
+  background-color: $color3;
 }
 
-html{
-    font-size: 16px;
+* {
+  font-family: "Inter", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-// h1{
-//     color: red;
-//     font-size: 5rem + 5rem;
-// }
+// Main_Home Style Css Start ------>
 
-p{
-  font-size: 5rem;
-}
-
-
-#main_home{
+#main_home {
   background-image: url(https://media.istockphoto.com/id/134081020/photo/portrait-of-young-businessman.jpg?s=612x612&w=0&k=20&c=42Rnp4Q0iMFoAjDmQaBkbzHbb5coG8EDdKbvdNcuwB4=);
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-background-color: red;
-
-
-}
-
-  h1{
-    font-size: 0.1rem;
-     color: theme-color("light");
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-#main_footer{
-  padding: 10px;
-}
-
-
-
-
-#main_contact{
-      background-color: #a5a5a51f;
-      padding: 50px 0px 50px 0px;
-}
-#main_contact .heading{
-  margin-top: -75px;
-  margin-bottom: 24px;
-  
-}
-#main_contact button.btn.btn-lg.text-white {
-    color: #ffca2c !important;
-}
-#main_contact button{
-  margin: 8px;
-}
-#main_contact path {
-  color: white;
-}
-
-
-
-#main_home{
-  background-color: #ffca2c;
-}
-
-
-
-
-
-//////////////////////////////////////////
-/// 
-/// 
-
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.textCenter {
-  text-align: center !important;
-}
-
-
-.heading-center  {
-  display: flex;
-  align-items: center;    /* Horizontal */
-  justify-content: center; /* Vertical */
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  position: relative;
+
+  h1 {
+    color: white;
+    margin: 0px 0px 20px 0px;
+    font-size: 2.1rem;
+  }
+  .home-btn {
+    background-color: #0000002d;
+    border-color: $color2;
+    color: $color2;
+  }
+  .home-btn:hover {
+    background-color: #00000069;
+  }
+  .heading {
+    top: 50%;
+    left: 14%;
+    position: absolute;
+    transform: translateY(-50%);
+  }
 }
 
+// Main_Home Style Css End ------>
+// Main_About Style Css Start ------>
 
-/* // About CSS  */
+#main_about {
+  padding: 120px 0px 80px 0px;
 
-#about {
-margin-top: 100px 0px 0px 0px;
-padding: 100px 0px 100px 0px;
+  h1 {
+    color: white;
+    margin: 0px 0px 20px 0px;
+    font-size: 2.1rem;
+  }
+  p {
+    padding: 0px 0px 0px 50px;
+    color: white;
+  }
+  p span {
+    color: $color2;
+  }
 }
 
-.row .p-text{
-padding-left: 68px;
-}
-#skill{
-margin: 50px 0px 0px 0px;
-}
+// Main_About Style Css End ------>
+// Main_Skills Style Css Start ------>
 
-/* PORTFOLIO */
-
-.image-hover-wrapper .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-hover-wrapper:hover .overlay {
-  opacity: 1;
+#main_skill {
+  h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.1rem;
+  }
+  p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
 }
 
-.experiance .heading{
-  text-align: left;
-} 
+// Main_Skills Style Css End ------>
+// Main_Portfolio Style Css Start ------>
 
-.icon-circle{ 
-  border: 6px solid rgb(245, 221, 3);
+#main_portfolio {
+  padding: 120px 0px 120px 0px;
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.1rem;
+  }
+
+  .btn {
+    color: $color3;
+    background-color: $color2;
+    margin: 50px 0px 0px 0px;
+    border: none;
+  }
+  .btn:hover {
+    font-size: 1.3rem;
+  }
+
+  .image-hover-wrapper .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-hover-wrapper:hover .overlay {
+    opacity: 1;
+  }
+}
+
+// Main_Portfolio Style Css End ------>
+// Main_Experiance Css Start ------>
+
+#main_experiance {
+ 
+  background: #524d4d73;
+  color: white;
+  padding: 0px 0px 70px 0px;
+  h1 {
+    font-size: 2.1rem;
+    color: white;
+     margin: -58px 0px 2rem 0px;
+  }
+
+  h4,
+  h6,
+  p {
+    padding-left: 49px;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  
+
+  .icon-circle {
+    border: 6px solid rgb(245, 221, 3);
     padding: 10px 0px 0px 11px;
     border-radius: 15px;
     font-size: 12px;
     background-color: yellow;
-        display: inline-block;
+    display: inline-block;
     position: absolute;
-    margin: 5px 0px 0px -8px;  
-}
+    margin: 5px 0px 0px -8px;
+  }
 
-.icon-borderline{
-  border-left: 6px solid white; /* vertical line */
- position: relative;
-      display: inline-block;
+  .icon-borderline {
+    border-left: 6px solid white; /* vertical line */
+    position: relative;
+    display: inline-block;
     height: auto;
-
-
-}
-.experiance .heading{
- margin: -26px 0px 86px 0px;
-}
-.experiance{
-     margin-top: 120px;
-    background-color: #a5a5a51f;
-
-}
-.heading.paragraph-text
-{
-  padding-left: 138px;
+  }
+#main_experiance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
-.paragraph-text{
-      padding-left: 34px ;
-
-
+.container {
+  max-width: 800px;
+  width: 100%;
 }
 
-.testimonial{
-  margin-top: 90px ;
-   margin-bottom: 90px;
+.heading {
+  margin-top: 1rem;
 }
-.testimonial .heading{
- padding: 0px 0px 30px 0px;
+
+.txt-paragraph p {
+  line-height: 1.6;
+  font-size: 1rem;
 }
-.testimonial .text p,h6{
-padding-left: 62px;
-text-align: left;
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+    
+  }
+
+  .txt-paragraph p {
+    font-size: 0.95rem;
+  }
 }
-.testimonial img{
-  width: 240px;
+
 }
 
 
-#contact{
-      background-color: #a5a5a51f;
-      padding: 50px 0px 50px 0px;
+
+// Main_Experiance Style Css End ------>
+// Main_testimonial Css Start ------>
+
+#main_testimonial {
+  padding: 120px 0px 120px 0px;
+  color: white;
+  h1 {
+    margin: 0px 0px 20px 0px;
+  }
+
+  p,
+  h6 {
+    padding-left: 50px;
+  }
+  .image{
+    text-align: center;
+  }
+
+  .image-img {
+    width: 240px;
+  }
 }
-#contact .heading{
-  margin-top: -75px;
-  margin-bottom: 24px;
-  
+
+// Main_testimonial Style Css End ------>
+// Main_Contact Css Start ------>
+
+#main_contact {
+  padding: 80px 0px 60px 0px;
+  background-color: #282c34;
+  background: #524d4d73;
+  h1,
+  p,
+  path {
+    color: white;
+  }
+  h1 {
+    margin: 0px 0px 20px 0px;
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .group-btn {
+    text-align: center;
+  }
+  button.btn.btn-lg {
+    background-color: $color3;
+    color: $color2;
+  }
+
+  .button {
+    margin: 8px;
+  }
 }
-#contact button.btn.btn-lg.text-white {
-    color: #ffca2c !important;
-}
-#contact button{
+
+#main_contact button {
   margin: 8px;
 }
-#contact path {
-  color: white;
+// Main_Contact Style Css End ------>
+// Main_Footer Css Start ------>
+
+#main_footer {
+  p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
 }
 
-
-
-
-
-
-
+// Main_Footer Style Css End ------>

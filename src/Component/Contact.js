@@ -10,26 +10,21 @@ export default function Contact() {
         <React.Fragment>
             <Testmonial />
             <div id='main_contact'>
-                <h2 className='heading text-white'>Contact Me</h2>
+                <h1>Contact Me</h1>
                 <div className='container'>
                     <div className='row'>
-                        <div className='g-btn'>
-                        <button className='btn btn-lg text-white bg-dark'><IoMdMail /> mmoniscodi.com
-                        </button>
-                        <button className='btn btn-lg text-white bg-dark'><FaPhoneAlt /> mmoniscodi.com
-                        </button>
-                        <br />
-                      <button className='btn btn-lg text-white bg-dark'><IoLocation /> New Delhi, India
-                        </button>
-                    </div>
+                        <div className='group-btn'>
+                            <button className='btn btn-lg'><IoMdMail /> mmoniscodi.com
+                            </button>
+                            <button className='btn btn-lg'><FaPhoneAlt /> +91 9910166490
+                            </button>
+                            <br />
+                            <button className='btn btn-lg'><IoLocation /> New Delhi, India
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-                <div id='main_footer'>
-                    <p className='text-white'>&copy @2025</p>
-    </div>
-                
-           
         </React.Fragment>
     )
 }

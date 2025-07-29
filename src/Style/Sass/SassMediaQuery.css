@@ -1,0 +1,58 @@
+@media (min-width: 300px) and (max-width: 768px) {
+  #main_about, #main_portfolio, #main_skill, #main_testimonial, #main_contact {
+    padding: 70px 0 60px 0 !important;
+  }
+  h1 {
+    padding-bottom: 29px !important;
+    text-align: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  #main_home {
+    height: 270px !important;
+  }
+  h1 {
+    margin: 0px 0px -9px 0px !important;
+    font-size: 1.3rem !important;
+  }
+  .font_size {
+    font-size: 1.4rem !important;
+  }
+  button.home-btn.btn.btn-lg {
+    font-size: 0.5rem;
+  }
+  #main_home button {
+    margin-top: -49px;
+  }
+  #main_home .heading {
+    margin-left: -28px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  #main_home {
+    height: 433px !important;
+  }
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  #main_about {
+    padding: 70px 0 60px 0 !important;
+  }
+  #main_about h1 {
+    padding-bottom: 29px !important;
+    text-align: center;
+  }
+  #main_about p {
+    padding: 0 0 0px 0px !important;
+    text-align: center; /* example override */
+  }
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  #main_skill {
+    padding: 0px 0 60px 0 !important;
+  }
+}
+@media (min-width: 412px) and (max-width: 915px) {
+  #main_testimonial .row {
+    display: block;
+  }
+}/*# sourceMappingURL=SassMediaQuery.css.map */

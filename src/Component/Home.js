@@ -8,19 +8,19 @@ export default function Home() {
                     <div className='row '>
                         <div className='col'>
                             <div className='heading '>
-                                <h1>I'M <strong className='text-warning'>Mohd Monis</strong><br />
+                                <h1>I'M <strong className='text-warning font_size'>Mohd Monis</strong><br />
                                     Web Developer </h1>
                                 <br />
-                                <div className='home-btn'>
-                                    <button className='btn btn-primary btn-lg'>Contact Me</button>
+                                <div>
+                                    <button className='home-btn btn btn-lg'>Contact Me</button>
                                 </div>
                             </div>
-                            <br />
                         </div>
-                        <br />
                     </div>
                 </div>
             </div>
         </React.Fragment>
     )
 }
+
+
